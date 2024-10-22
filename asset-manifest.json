@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/laviniamusicstudio/static/css/main.f855e6bc.css",
-    "main.js": "/laviniamusicstudio/static/js/main.e3a4490d.js",
+    "main.css": "/laviniamusicstudio/static/css/main.f6aacd38.css",
+    "main.js": "/laviniamusicstudio/static/js/main.a13223bc.js",
     "static/js/453.08121d8a.chunk.js": "/laviniamusicstudio/static/js/453.08121d8a.chunk.js",
-    "static/media/logo.svg": "/laviniamusicstudio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/laviniamusicstudio/index.html",
-    "main.f855e6bc.css.map": "/laviniamusicstudio/static/css/main.f855e6bc.css.map",
-    "main.e3a4490d.js.map": "/laviniamusicstudio/static/js/main.e3a4490d.js.map",
+    "main.f6aacd38.css.map": "/laviniamusicstudio/static/css/main.f6aacd38.css.map",
+    "main.a13223bc.js.map": "/laviniamusicstudio/static/js/main.a13223bc.js.map",
     "453.08121d8a.chunk.js.map": "/laviniamusicstudio/static/js/453.08121d8a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.e3a4490d.js"
+    "static/css/main.f6aacd38.css",
+    "static/js/main.a13223bc.js"
   ]
 }
