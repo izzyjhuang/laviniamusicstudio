@@ -5,6 +5,7 @@ import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './Header';
 import Footer from './Footer';
+import Homepage from './Home';
 
 function App() { 
   const [selectedLanguage, setSelectedLanguage] = useState('English');
@@ -26,7 +27,7 @@ function App() {
 
 const Home = ({ selectedLanguage }) => (
   <div>
-    {/* <Banner selectedLanguage={selectedLanguage} /> */}
+    <Homepage selectedLanguage={selectedLanguage} />
   </div>
 );
 

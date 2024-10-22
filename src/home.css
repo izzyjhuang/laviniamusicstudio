@@ -1,0 +1,115 @@
+.banner-container {
+    display: flex;
+    margin-left: 10vw;
+    width: 80vw;
+    align-items: center;
+    /* justify-content: space-between; */
+    background-color: #fdf9f6;
+    padding: 1vw 4vw;
+    /* margin-right: 2vw; */
+}
+
+.banner-image-overlay {
+    width: 20vw;
+    height: width;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Container for overlaying images */
+    background-color: aqua;
+    margin-top: 18vw;
+    padding: 8vw;
+  }
+
+  .banner-logo-0 {
+    width: 40vw;
+    background-color: #fdf9f6; 
+    border-radius: 50%;
+    position: relative;
+    transition: transform 0.5s; 
+    z-index: 1;
+}
+
+  .banner-overlay-logo-0 {
+    width: 21vw;
+    margin-bottom: 0.75vw;
+    position: absolute;
+    transition: transform 0.5s; 
+    z-index: 2; 
+  }
+
+.banner-image-overlay:hover .banner-logo {
+    transform: scale(1.2) rotate(360deg); /* Combine transforms */
+}
+.banner-image-overlay:hover .banner-overlay-logo {
+    transform: scale(1.2) rotate(-360deg); /* Combine transforms */
+}
+
+.banner-header-text {
+    margin-top: 8vw;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 1px 1px 2px #6d6c6c; 
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.banner-header-text h0 {
+    width: 100%;
+    /* padding-left: 12%; */
+    /* padding-right: 10%; */
+    font-size: 7vw;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 1px 1px 2px #6d6c6c; 
+    text-align: left;
+    font-family: 'Exo 2', cursive;
+    margin-bottom: 2vw;
+}
+
+.banner-header-text h1 {
+    width: 90%;
+    /* padding-left: 12%; */
+    /* padding-right: 10%; */
+    font-size: 3vw;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 1px 1px 2px #6d6c6c; 
+    text-align: left;
+    font-family: 'Ubuntu', cursive;
+    margin-bottom: 2vw;
+
+}
+
+.banner-header-text h2 {
+    width: 90%;
+    /* padding-left: 12%; */
+    /* padding-right: 10%; */
+    font-size: 2.5vw;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 1px 1px 2px #6d6c6c; 
+    text-align: left;
+    font-family: 'EB Garamond', cursive;
+    margin-bottom: 2vw;
+}
+
+.banner-header-text h3 {
+    width: 30%;
+    /* padding-left: 12%; */
+    /* padding-right: 10%; */
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: #fdf9f6;
+    text-shadow: 1px 1px 2px #6d6c6c; 
+    text-align: left;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    font-family: 'Libre Baskerville', cursive;
+    background-color: #5073D6;
+
+}
+
+

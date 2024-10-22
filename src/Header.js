@@ -1,11 +1,14 @@
-// Header.js
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './header.css';
 
 const Header = ({ selectedLanguage, setSelectedLanguage }) => {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
+  const [isAboutDropdownVisible, setAboutDropdownVisible] = useState(false);
+  const [isPianoDropdownVisible, setPianoDropdownVisible] = useState(false);
+  const [isViolinDropdownVisible, setViolinDropdownVisible] = useState(false);
+  const [isResourcesDropdownVisible, setResourcesDropdownVisible] = useState(false);
+  const [isInquiriesDropdownVisible, setInquiriesDropdownVisible] = useState(false);
 
   const toggleDropdown = () => {
     setDropdownVisible(!isDropdownVisible);
@@ -14,6 +17,26 @@ const Header = ({ selectedLanguage, setSelectedLanguage }) => {
   const handleLanguageSelect = (language) => {
     setSelectedLanguage(language);
     setDropdownVisible(false);
+  };
+
+  const toggleAboutDropdown = () => {
+    setAboutDropdownVisible(!isAboutDropdownVisible);
+  };
+
+  const togglePianoDropdown = () => {
+    setPianoDropdownVisible(!isPianoDropdownVisible);
+  };
+
+  const toggleViolinDropdown = () => {
+    setViolinDropdownVisible(!isViolinDropdownVisible);
+  };
+
+  const toggleResourcesDropdown = () => {
+    setResourcesDropdownVisible(!isResourcesDropdownVisible);
+  };
+
+  const toggleInquiriesDropdown = () => {
+    setInquiriesDropdownVisible(!isInquiriesDropdownVisible);
   };
 
   const getText = (textKey) => {
@@ -41,7 +64,7 @@ const Header = ({ selectedLanguage, setSelectedLanguage }) => {
       Inquiries: {
         English: 'Inquiries',
         中文: '試課',
-      }
+      },
     };
     return translations[textKey][selectedLanguage];
   };
@@ -50,19 +73,66 @@ const Header = ({ selectedLanguage, setSelectedLanguage }) => {
     <header className="header">
       <div className="logo-container">
         <Link to="/">
-          <div className="image-overlay">
-            {/* <img className="logo" src="../images/home/izzy-pirate.png" loading="lazy" alt="Izzy Logo" /> */}
-            <img className="overlay-logo" src="../images/home/lavinia-music-studio.png" loading="lazy" alt="Overlay Logo" />
-          </div>
-          {/* <h1 className="header-text">{getText('Home')}</h1> */}
+          <h1>Studio Logo</h1>
         </Link>
       </div>
       <nav className="nav-links">
-        <Link to="/about-me" className="nav-link">{getText('About')}</Link>
-        <Link to="/piano" className="nav-link">{getText('Piano')}</Link>
-        <Link to="/violin" className="nav-link">{getText('Violin')}</Link>
-        <Link to="/resources" className="nav-link">{getText('Resources')}</Link>
-        <Link to="/inquiries" className="nav-link">{getText('Inquiries')}</Link>
+      <div className="nav-link piano-dropdown" onClick={toggleAboutDropdown}>
+          {getText('About')}
+          {isAboutDropdownVisible && (
+            <ul className="dropdown-menu">
+              <li><Link to="/about/lavinia">Lavinia</Link></li>
+              <li><Link to="/about/performance">Performance</Link></li>
+              <li><Link to="/about/teaching">Teaching</Link></li>
+            </ul>
+          )}
+        </div>
+
+        <div className="nav-link piano-dropdown" onClick={togglePianoDropdown}>
+          {getText('Piano')}
+          {isPianoDropdownVisible && (
+            <ul className="dropdown-menu">
+              <li><Link to="/piano/studio">Studio</Link></li>
+              <li><Link to="/piano/testimonies">Testimonies</Link></li>
+              <li><Link to="/piano/recitals">Recitals</Link></li>
+            </ul>
+          )}
+        </div>
+
+        <div className="nav-link piano-dropdown" onClick={toggleViolinDropdown}>
+          {getText('Violin')}
+          {isViolinDropdownVisible && (
+            <ul className="dropdown-menu">
+              <li><Link to="/violin/studio">Studio</Link></li>
+              <li><Link to="/violin/testimonies">Testimonies</Link></li>
+              <li><Link to="/violin/recitals">Recitals</Link></li>
+            </ul>
+          )}
+        </div>
+
+        <div className="nav-link piano-dropdown" onClick={toggleResourcesDropdown}>
+          {getText('Resources')}
+          {isResourcesDropdownVisible && (
+            <ul className="dropdown-menu">
+              <li><Link to="/resources/piano">Piano</Link></li>
+              <li><Link to="/resources/violin">Violin</Link></li>
+              <li><Link to="/resources/ensemble">Ensemble</Link></li>
+              <li><Link to="/resources/rehersal-skills">Rehersal Skills</Link></li>
+              <li><Link to="/resources/orchestra-example">Orchestra Example</Link></li>
+            </ul>
+          )}
+        </div>
+
+        <div className="nav-link piano-dropdown" onClick={toggleInquiriesDropdown}>
+          {getText('Inquiries')}
+          {isInquiriesDropdownVisible && (
+            <ul className="dropdown-menu">
+              <li><Link to="/inquiries/consultation">Consultation</Link></li>
+              <li><Link to="/inquiries/trial-lesson">Trial Lesson</Link></li>
+            </ul>
+          )}
+        </div>
+              
       </nav>
       <div className="language-selector" onClick={toggleDropdown}>
         <span>{selectedLanguage}</span>

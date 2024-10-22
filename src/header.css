@@ -23,8 +23,20 @@
   display: flex;
   align-items: center; /* Ensures vertical alignment */
   justify-content: flex-start; /* Aligns them to the left */
+  background-color: aqua;
+  padding: 0.5vw;
 }
 
+.logo-container h1 {
+  width: 7vw;
+  font-size: 2vw;
+  font-weight: bold;
+  /* color: #333; */
+  /* margin-left: 1vw; */
+  display: flex;
+  text-align: center;
+  /* margin-left: 4vw; */
+}
 
   .logo-container a {
     text-decoration: none; 
@@ -268,3 +280,46 @@
   border-bottom: 1px solid #ccc;
 }
 
+/* Styling for the piano dropdown */
+.piano-dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 1vw;
+  padding: 0;
+  list-style: none;
+  margin-top: 0.5vw;
+  width: 12vw;
+  z-index: 999;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu li {
+  padding: 1vw;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  color: #333;
+}
+
+.dropdown-menu a {
+  text-decoration: none; 
+  display: flex;
+  color: #333;
+  text-align: center;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-menu li:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
