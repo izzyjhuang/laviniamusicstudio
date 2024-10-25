@@ -32,7 +32,7 @@ const Homepage = ({ selectedLanguage }) => {
     <div>
       <div className="banner-container">
         <div className="banner-wallpaper">
-          <img src={`${baseURL}/images/home/lavinia-music-studio-logo.png`} alt="Lavinia Music Studio Logo" className="banner-image" />
+          <img src={`${baseURL}/images/home-banner.jpeg`} alt="Lavinia Music Studio Logo" className="banner-image" />
         </div>
         
         {/* <div className="banner-header-text">

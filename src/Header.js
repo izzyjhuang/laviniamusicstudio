@@ -77,13 +77,13 @@ const Header = ({ selectedLanguage, setSelectedLanguage }) => {
   return (
     <header className="header">
       <div className="header-name">
+      <div className="header-logo">
+          <img src={`${baseURL}/images/home/owl-logo.png`} alt="Lavinia Music Studio Logo" className="banner-image" />
+        </div>
         {getText('studio_name')}
       </div>
       <div className="header-content">
-        <div className="header-logo">
-          <img src={`${baseURL}/images/home/owl-logo.png`} alt="Lavinia Music Studio Logo" className="banner-image" />
-        </div>
-      <div className="header-dropdowns">
+        
       <nav className="nav-links">
       <div className="nav-link piano-dropdown" onClick={toggleAboutDropdown}>
           {getText('About')}
@@ -141,7 +141,6 @@ const Header = ({ selectedLanguage, setSelectedLanguage }) => {
           )}
         </div>     
       </nav>
-      </div>
       <div className="language-selector" onClick={toggleDropdown}>
         <span>{selectedLanguage}</span>
         <i className="arrow-down">▾</i>
