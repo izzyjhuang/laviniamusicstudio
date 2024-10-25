@@ -81,7 +81,7 @@ const Header = ({ selectedLanguage, setSelectedLanguage }) => {
       </div>
       <div className="header-content">
         <div className="header-logo">
-          <img src={`${baseURL}/images/home/lavinia-music-studio-logo.png`} alt="Lavinia Music Studio Logo" className="banner-image" />
+          <img src={`${baseURL}/images/home/owl-logo.png`} alt="Lavinia Music Studio Logo" className="banner-image" />
         </div>
       <div className="header-dropdowns">
       <nav className="nav-links">
