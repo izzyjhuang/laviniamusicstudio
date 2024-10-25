@@ -77,10 +77,12 @@ const Header = ({ selectedLanguage, setSelectedLanguage }) => {
   return (
     <header className="header">
       <div className="header-name">
-      <div className="header-logo">
-          <img src={`${baseURL}/images/home/owl-logo.png`} alt="Lavinia Music Studio Logo" className="banner-image" />
-        </div>
-        {getText('studio_name')}
+      <Link to="/">
+          <div className="header-logo">
+            <img src={`${baseURL}/images/home/owl-logo.png`} alt="Lavinia Music Studio Logo" className="banner-image" />
+          </div>
+          {getText('studio_name')}
+        </Link>
       </div>
       <div className="header-content">
         
