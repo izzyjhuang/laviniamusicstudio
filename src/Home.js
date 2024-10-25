@@ -1,12 +1,12 @@
-// Home.js
 import React from 'react';
 import './home.css'; 
 
-
 const Homepage = ({ selectedLanguage }) => {
+  const baseURL = 'https://izzyjhuang.com/laviniamusicstudio';
+
   const textTranslations = {
     studio_name: {
-      English: "  Lavinia Music Studio",
+      English: "  Lavinia Lee Music Studio",
       中文: "  Lavinia 音樂教室"
     },
     description: {
@@ -24,18 +24,18 @@ const Homepage = ({ selectedLanguage }) => {
   };
 
   const text0 = textTranslations.studio_name[selectedLanguage] || textTranslations.studio_name['English'];
-const text1 = textTranslations.description[selectedLanguage] || textTranslations.description['English'];
-const text2 = textTranslations.quote[selectedLanguage] || textTranslations.quote['English'];
-const text3 = textTranslations.learn_more[selectedLanguage] || textTranslations.learn_more['English'];
+  const text1 = textTranslations.description[selectedLanguage] || textTranslations.description['English'];
+  const text2 = textTranslations.quote[selectedLanguage] || textTranslations.quote['English'];
+  const text3 = textTranslations.learn_more[selectedLanguage] || textTranslations.learn_more['English'];
   
   return (
     <div>
       <div className="banner-container">
         <div className="banner-wallpaper">
-        <img src="../images/home/home-banner.jpeg" alt="Home Banner" className="banner-image" />
+          <img src={`${baseURL}/images/home/lavinia-music-studio-logo.png`} alt="Lavinia Music Studio Logo" className="banner-image" />
         </div>
         
-      {/* <div className="banner-header-text">
+        {/* <div className="banner-header-text">
             <h0>{text0}</h0>
             <h1>{text1}</h1>
             <h2>{text2}</h2>

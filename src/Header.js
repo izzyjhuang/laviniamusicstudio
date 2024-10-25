@@ -9,6 +9,7 @@ const Header = ({ selectedLanguage, setSelectedLanguage }) => {
   const [isViolinDropdownVisible, setViolinDropdownVisible] = useState(false);
   const [isResourcesDropdownVisible, setResourcesDropdownVisible] = useState(false);
   const [isInquiriesDropdownVisible, setInquiriesDropdownVisible] = useState(false);
+  const baseURL = 'https://izzyjhuang.com/laviniamusicstudio';
 
   const toggleDropdown = () => {
     setDropdownVisible(!isDropdownVisible);
@@ -42,15 +43,15 @@ const Header = ({ selectedLanguage, setSelectedLanguage }) => {
   const getText = (textKey) => {
     const translations = {
       studio_name: {
-        English: "  Lavinia Music Studio",
-        中文: "  Lavinia 音樂教室"
+        English: "  Lavinia Lee Music Studio",
+        中文: "  Lavinia Lee 音樂教室"
       },
       Home: {
-        English: 'Lavinia Music Studio',
-        中文: 'Lavinia 音樂教室',
+        English: 'Lavinia Lee Music Studio',
+        中文: 'Lavinia Lee 音樂教室',
       },
       About: {
-        English: 'About',
+        English: 'About Me',
         中文: '關於我',
       },
       Piano: {
@@ -58,16 +59,16 @@ const Header = ({ selectedLanguage, setSelectedLanguage }) => {
         中文: '鋼琴',
       },
       Violin: {
-        English: 'Violin',
-        中文: '小提琴',
+        English: 'Violin/Viola',
+        中文: '小提琴/中提琴',
       },
       Resources: {
-        English: 'Resources',
-        中文: '資源',
+        English: 'Current Students',
+        中文: '學生專用',
       },
       Inquiries: {
-        English: 'Inquiries',
-        中文: '試課',
+        English: 'Contact',
+        中文: '聯絡我',
       },
     };
     return translations[textKey][selectedLanguage];
@@ -79,11 +80,10 @@ const Header = ({ selectedLanguage, setSelectedLanguage }) => {
         {getText('studio_name')}
       </div>
       <div className="header-content">
-      <div className="logo-container">
-        <Link to="/">
-          <h1>Studio Logo</h1>
-        </Link>
-      </div>
+        <div className="header-logo">
+          <img src={`${baseURL}/images/home/lavinia-music-studio-logo.png`} alt="Lavinia Music Studio Logo" className="banner-image" />
+        </div>
+      <div className="header-dropdowns">
       <nav className="nav-links">
       <div className="nav-link piano-dropdown" onClick={toggleAboutDropdown}>
           {getText('About')}
@@ -139,9 +139,9 @@ const Header = ({ selectedLanguage, setSelectedLanguage }) => {
               <li><Link to="/inquiries/trial-lesson">Trial Lesson</Link></li>
             </ul>
           )}
-        </div>
-              
+        </div>     
       </nav>
+      </div>
       <div className="language-selector" onClick={toggleDropdown}>
         <span>{selectedLanguage}</span>
         <i className="arrow-down">▾</i>
