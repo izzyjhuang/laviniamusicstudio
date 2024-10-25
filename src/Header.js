@@ -41,6 +41,10 @@ const Header = ({ selectedLanguage, setSelectedLanguage }) => {
 
   const getText = (textKey) => {
     const translations = {
+      studio_name: {
+        English: "  Lavinia Music Studio",
+        中文: "  Lavinia 音樂教室"
+      },
       Home: {
         English: 'Lavinia Music Studio',
         中文: 'Lavinia 音樂教室',
@@ -71,6 +75,10 @@ const Header = ({ selectedLanguage, setSelectedLanguage }) => {
 
   return (
     <header className="header">
+      <div className="header-name">
+        {getText('studio_name')}
+      </div>
+      <div className="header-content">
       <div className="logo-container">
         <Link to="/">
           <h1>Studio Logo</h1>
@@ -143,6 +151,7 @@ const Header = ({ selectedLanguage, setSelectedLanguage }) => {
             <li onClick={() => handleLanguageSelect('中文')}>中文</li>
           </ul>
         )}
+      </div>
       </div>
     </header>
   );

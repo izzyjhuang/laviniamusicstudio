@@ -12,13 +12,28 @@
   
   .header {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 4vw 8vw;
     background-color: #fdf9f6;
     
   }
-  
+  .header-name {
+    width: 90%;
+    font-size: 5vw;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 1px 1px 2px #6d6c6c; 
+    text-align: center;
+    font-family: 'Exo 2', cursive;
+    margin-bottom: 1vw;
+  }
+  .header-content {
+    display: flex;
+    flex-direction: row;
+  }
+
 .logo-container {
   display: flex;
   align-items: center; /* Ensures vertical alignment */

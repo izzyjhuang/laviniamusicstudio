@@ -31,7 +31,11 @@ const text3 = textTranslations.learn_more[selectedLanguage] || textTranslations.
   return (
     <div>
       <div className="banner-container">
-      <div className="banner-header-text">
+        <div className="banner-wallpaper">
+        <img src="../images/home/home-banner.jpeg" alt="Home Banner" className="banner-image" />
+        </div>
+        
+      {/* <div className="banner-header-text">
             <h0>{text0}</h0>
             <h1>{text1}</h1>
             <h2>{text2}</h2>
@@ -39,8 +43,7 @@ const text3 = textTranslations.learn_more[selectedLanguage] || textTranslations.
         </div>
         <div className="banner-image-overlay">
             <h1> We'll put a cover photo here</h1>
-          {/* <img src="../images/home/izzy-pirate-overlay.png" alt="Overlay Logo" loading="lazy"/> */}
-        </div>
+        </div> */}
       </div>
 
     </div>
