@@ -9,6 +9,41 @@
     /* margin-right: 2vw; */
 }
 
+.banner-wallpaper {
+    width: 100%;
+    height: width;
+    /* background-color: #5073D6; */
+    
+
+}
+
+.banner-background {
+    /* margin-top: 10vw; */
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-image-container {
+    background-color: white;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: -30%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+.banner-image {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 2.5%;
+}
+
+
 .banner-image-overlay {
     width: 20vw;
     height: width;
@@ -50,7 +85,7 @@
     font-weight: bold;
     color: #333;
     text-shadow: 1px 1px 2px #6d6c6c; 
-    text-align: left;
+    text-align: center;
     display: flex;
     flex-direction: column;
 }
@@ -62,7 +97,6 @@
     font-weight: bold;
     color: #333;
     text-shadow: 1px 1px 2px #6d6c6c; 
-    text-align: left;
     font-family: 'Exo 2', cursive;
     margin-bottom: 2vw;
 }
@@ -75,7 +109,6 @@
     font-weight: bold;
     color: #333;
     text-shadow: 1px 1px 2px #6d6c6c; 
-    text-align: left;
     font-family: 'Ubuntu', cursive;
     margin-bottom: 2vw;
 
@@ -89,20 +122,19 @@
     font-weight: bold;
     color: #333;
     text-shadow: 1px 1px 2px #6d6c6c; 
-    text-align: left;
     font-family: 'EB Garamond', cursive;
     margin-bottom: 2vw;
 }
 
 .banner-header-text h3 {
     width: 30%;
+    margin-left: 35%;
     /* padding-left: 12%; */
     /* padding-right: 10%; */
     font-size: 1.5vw;
     font-weight: bold;
     color: #fdf9f6;
     text-shadow: 1px 1px 2px #6d6c6c; 
-    text-align: left;
     padding-left: 1vw;
     padding-right: 1vw;
     padding-top: 1vw;
@@ -112,12 +144,6 @@
 
 }
 
-.banner-wallpaper {
-    width: 1vw;
-    height: width;
-    background-color: #5073D6;
-
-}
 
 
 

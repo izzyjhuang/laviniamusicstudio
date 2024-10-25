@@ -32,7 +32,16 @@ const Homepage = ({ selectedLanguage }) => {
     <div>
       <div className="banner-container">
         <div className="banner-wallpaper">
-          <img src={`${baseURL}/images/home-banner.jpeg`} alt="Lavinia Music Studio Logo" className="banner-image" />
+          <img src={`${baseURL}/images/home-banner.jpeg`} alt="Lavinia Music Studio Logo" className="banner-background" />
+          <div className="banner-image-container">
+            <img src={`${baseURL}/images/playing-piano.jpeg`} alt="Cover-pic" className="banner-image"/>
+          </div>
+          <div className="banner-header-text">
+            {/* <h0>{text0}</h0> */}
+            <h1>{text1}</h1>
+            <h2>{text2}</h2>
+            <h3>{text3}</h3>
+        </div>
         </div>
         
         {/* <div className="banner-header-text">
