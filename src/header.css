@@ -24,7 +24,6 @@
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    
     margin-bottom: -1vw;
   }
 
@@ -47,7 +46,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-size: 2vw;
   }
 
   .header-logo img {
@@ -174,17 +172,18 @@
   }
 
   @media (max-width: 4096px) {
-    .header-text {
-      margin-left: 3vw;
+    .header-content {
+      font-size: 2.4vw;
+    }
+  
+    .language-selector .arrow-down {
+      font-size: 1.2vw;
     }
   }
 
   @media (max-width: 2048px) {
-    .header-text {
-      margin-left: 2.5vw;
-    }
     .header-content {
-      font-size: 3.6vw;
+      font-size: 2.4vw;
     }
   
     .language-selector .arrow-down {
@@ -193,9 +192,6 @@
   }
 
   @media (max-width: 1536px) {
-    .header-text {
-      margin-left: 1.875vw;
-    }
     .header-content {
       font-size: 2.4vw;
     }
@@ -206,9 +202,6 @@
   }
 
   @media (max-width: 1024px) {
-    .header-text {
-      margin-left: 0.75vw;
-    }
     .header-content {
       font-size: 2.4vw;
     }
@@ -219,9 +212,6 @@
   }
 
   @media (max-width: 767px) {
-    .header-text {
-      margin-left: -0.5vw;
-    }
     .header-content {
       font-size: 1.5vw;
     }
@@ -232,9 +222,6 @@
   }
 
   @media (max-width: 512px) {
-    .header-text {
-      margin-left: -2vw;
-    }
     .header-content {
       font-size: 1.2vw;
     }

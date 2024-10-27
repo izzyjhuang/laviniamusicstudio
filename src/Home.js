@@ -20,6 +20,10 @@ const Homepage = ({ selectedLanguage }) => {
     learn_more: {
       English: " Learn More >>",
       中文: " 了解更多 >>"
+    },
+    mission_statement: {
+        English: " Mission Statement",
+        中文: "教學宗旨"
     }
   };
 
@@ -27,25 +31,29 @@ const Homepage = ({ selectedLanguage }) => {
   const text1 = textTranslations.description[selectedLanguage] || textTranslations.description['English'];
   const text2 = textTranslations.quote[selectedLanguage] || textTranslations.quote['English'];
   const text3 = textTranslations.learn_more[selectedLanguage] || textTranslations.learn_more['English'];
+  const text4 = textTranslations.mission_statement[selectedLanguage] || textTranslations.quote['English'];
+//   const text5 = textTranslations.learn_more[selectedLanguage] || textTranslations.learn_more['English'];
   
   return (
     <div>
       <div className="banner-container">
         <div className="banner-wallpaper">
-          <img src={`${baseURL}/images/home-banner.jpeg`} alt="Lavinia Music Studio Logo" className="banner-background" />
+          <img src={`${baseURL}/images/home/home-banner.jpeg`} alt="Lavinia Music Studio Logo" className="banner-background" />
           <div className="banner-image-container">
-            <img src={`${baseURL}/images/playing-piano.jpeg`} alt="Cover-pic" className="banner-image"/>
+            <img src={`${baseURL}/images/home/playing-piano.jpeg`} alt="Cover-pic" className="banner-image"/>
           </div>
-          <div className="banner-header-text">
-            {/* <h0>{text0}</h0> */}
+          {/* <div className="banner-header-text">
             <h1>{text1}</h1>
             <h2>{text2}</h2>
             <h3>{text3}</h3>
-        </div>
+        </div> */}
         </div>
         <div className="mission-section">
             <img src={`${baseURL}/images/teacher-pic.jpeg`}/>
-
+            <div className="mission-statement">
+                <h1>{text4}</h1>
+                <h2>~Lavinia </h2>
+            </div>
         </div>
       </div>
 

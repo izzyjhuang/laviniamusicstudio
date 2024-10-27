@@ -1,5 +1,6 @@
 .banner-container {
     display: flex;
+    flex-direction: column;
     /* margin-left: 10vw; */
     width: 100vw;
     align-items: center;
@@ -143,6 +144,63 @@
     background-color: #5073D6;
 
 }
+
+.mission-section {
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.mission-section img {
+    width: 50vw;
+
+}
+
+.mission-section h1 h2 {
+    font-size: 5vw;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 1px 1px 2px #6d6c6c; 
+    text-align: center;
+    font-family: 'Exo 2', cursive;
+}
+
+
+@media (max-width: 4096px) {
+    .mission-section h1 h2 {
+      font-size: 4.2vw;
+    }
+  }
+
+  @media (max-width: 2048px) {
+    .mission-section h1 h2 {
+        font-size: 3.6vw;
+      }
+  }
+
+  @media (max-width: 1536px) {
+    .mission-section h1 h2 {
+      font-size: 2.4vw;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .mission-section h1 h2 {
+        font-size: 2.4vw;
+      }
+  }
+
+  @media (max-width: 767px) {
+    .mission-section h1 h2 {
+        font-size: 1.5vw;
+      }
+  }
+
+  @media (max-width: 512px) {
+    .mission-section h1 h2 {
+        font-size: 1.2vw;
+      }
+  }
 
 
 
