@@ -43,16 +43,10 @@ const Homepage = ({ selectedLanguage }) => {
             <h3>{text3}</h3>
         </div>
         </div>
-        
-        {/* <div className="banner-header-text">
-            <h0>{text0}</h0>
-            <h1>{text1}</h1>
-            <h2>{text2}</h2>
-            <h3>{text3}</h3>
+        <div className="mission-section">
+            <img src={`${baseURL}/images/teacher-pic.jpeg`}/>
+
         </div>
-        <div className="banner-image-overlay">
-            <h1> We'll put a cover photo here</h1>
-        </div> */}
       </div>
 
     </div>

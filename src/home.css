@@ -1,7 +1,7 @@
 .banner-container {
     display: flex;
-    margin-left: 10vw;
-    width: 80vw;
+    /* margin-left: 10vw; */
+    width: 100vw;
     align-items: center;
     /* justify-content: space-between; */
     background-color: #fdf9f6;
