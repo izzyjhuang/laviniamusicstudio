@@ -1,53 +1,130 @@
 .footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #fdf9f6; /* Soft pink background */
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #3b2f2f; /* Dark brown background */
+  padding: 30px 20px;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow on top */
+}
+
+.footer-header {
+  font-size: 2.5vw;
+  font-weight: bold;
+  color: #fff; /* White font for "Contact Us" */
+  text-align: center;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase; /* Makes the header look more distinct */
+  margin-bottom: 1vw;
+}
+
+.footer-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.4vw; /* Slightly smaller font size for email and phone */
+  margin-bottom: 3vw;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-icons a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.2vw;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.footer-icons a:hover {
+  color: #ddd; /* Light gray color on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.footer-icons svg {
+  font-size: 1.8vw;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  font-size: 1vw;
+  color: #fff;
+  opacity: 0.8; /* Slightly faded for a softer look */
+}
+
+/* Responsive font sizes */
+@media (max-width: 4096px) {
+  .footer-header {
+      font-size: 4.2vw;
   }
-  
-  .footer-icons {
-    display: flex;
-    gap: 40px; /* Adjust for spacing between icons */
-    margin-bottom: 20px;
-  }
-  
   .footer-icons a {
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: color 0.3s;
+      font-size: 2.4vw;
   }
-  
-  .footer-icons a:hover {
-    color: #000; /* Change color on hover */
-  }
-  
-  .footer-icons svg {
-    font-size: 24px; /* Adjust icon size */
-    margin-bottom: 5px;
-  }
-  
   .footer-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    font-size: 20px;
+      font-size: 2vw;
   }
-  
-  .footer-links a {
-    text-decoration: none;
-    color: #41badb;
-    transition: border-color 0.3s;
+}
+
+@media (max-width: 2048px) {
+  .footer-header {
+      font-size: 3.6vw;
   }
-  
-  .footer-links a:hover {
-    color: #017a9b;
-    opacity: 0.8; 
-    scale: 1.1;
+  .footer-icons a {
+      font-size: 2vw;
   }
+  .footer-links {
+      font-size: 1.8vw;
+  }
+}
+
+@media (max-width: 1536px) {
+  .footer-header {
+      font-size: 2.4vw;
+  }
+  .footer-icons a {
+      font-size: 1.5vw;
+  }
+  .footer-links {
+      font-size: 1.2vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer-header {
+      font-size: 2vw;
+  }
+  .footer-icons a {
+      font-size: 1.2vw;
+  }
+  .footer-links {
+      font-size: 1vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-header {
+      font-size: 1.5vw;
+  }
+  .footer-icons a {
+      font-size: 1vw;
+  }
+  .footer-links {
+      font-size: 0.8vw;
+  }
+}
+
+@media (max-width: 512px) {
+  .footer-header {
+      font-size: 1.2vw;
+  }
+  .footer-icons a {
+      font-size: 0.8vw;
+  }
+  .footer-links {
+      font-size: 0.6vw;
+  }
+}

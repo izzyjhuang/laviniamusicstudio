@@ -1,36 +1,27 @@
 // Footer.js
 
 import React from 'react';
-import './footer.css'; // Assuming you store the CSS in Footer.css
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import FontAwesome
-import { faThreads, faXTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import {faEnvelope} from '@fortawesome/free-solid-svg-icons'; // For non-branded icons
+import './footer.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
   return (
     <div className="footer-container">
+      <h1 className="footer-header">Contact Us</h1>
       <div className="footer-icons">
-      <a href="https://linkedin.com/in/izzyhuang" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faLinkedin} /> 
-          <span>LinkedIn</span>
-        </a>
-        <a href="https://x.com/izzyjhuang" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faXTwitter} />
-          <span>Twitter</span>
-        </a>
-        <a href="https://www.threads.net/@izh_27" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faThreads} />
-          <span>Threads</span>
-        </a>
-        <a href="mailto:izzythebroker@gmail.com">
+        <a href="mailto:lavinialeemusicstudio@gmail.com">
           <FontAwesomeIcon icon={faEnvelope} /> 
-          <span>Email</span>
+          <span>Email: lavinialeemusicstudio@gmail.com</span>
+        </a>
+        <a href="tel:+8476519724">
+          <FontAwesomeIcon icon={faPhone} /> 
+          <span>Phone: +1 (847) 651-9724</span>
         </a>
       </div>
-
-        <div className="footer-links">
-            <h5>© Copyright 2024 Lavinia Music Studio</h5>
-        </div>
+      <div className="footer-links">
+        <h5>© Copyright 2024 Lavinia Music Studio</h5>
+      </div>
     </div>
   );
 }

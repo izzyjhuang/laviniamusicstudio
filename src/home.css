@@ -146,14 +146,15 @@
 }
 
 .mission-section {
+    width: 60%;
     margin-top: 5vw;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .mission-section img {
-    width: 50vw;
-
+    width: 20vw;
 }
 
 .mission-section h1 h2 {
@@ -165,33 +166,67 @@
     font-family: 'Exo 2', cursive;
 }
 
+.lessons-container {
+  width: 60%;
+  margin-top: 5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5vw;
+}
+
+.lessons-section {
+  width: 48%; /* Adjust width to control spacing between sections */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+
+.mission-statement {
+  text-align: center;
+  margin-bottom: auto; /* Pushes the image to the bottom */
+}
+.lessons-section img {
+  width: 90%;
+  align-self: flex-end; /* Aligns the image to the bottom of the container */
+  margin-top: auto; /* Pushes the image to the bottom */
+}
+
+.offering-statement {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
 
 @media (max-width: 4096px) {
-    .mission-section h1 h2 {
+  .mission-statement h1, .mission-statement h2 {
       font-size: 4.2vw;
     }
   }
 
   @media (max-width: 2048px) {
-    .mission-section h1 h2 {
+    .mission-statement h1, .mission-statement h2 {
         font-size: 3.6vw;
       }
   }
 
   @media (max-width: 1536px) {
-    .mission-section h1 h2 {
+    .mission-statement h1, .mission-statement h2 {
       font-size: 2.4vw;
     }
   }
 
   @media (max-width: 1024px) {
-    .mission-section h1 h2 {
+    .mission-statement h1, .mission-statement h2 {
         font-size: 2.4vw;
       }
   }
 
   @media (max-width: 767px) {
-    .mission-section h1 h2 {
+    .mission-statement h1, .mission-statement h2 {
         font-size: 1.5vw;
       }
   }
