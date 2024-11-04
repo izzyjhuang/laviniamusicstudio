@@ -1,5 +1,7 @@
 import React from 'react';
 import './home.css'; 
+import IllinoisMap from './IllinoisMap'; // Adjust the path if needed
+
 
 const Homepage = ({ selectedLanguage }) => {
   const baseURL = 'https://izzyjhuang.com/laviniamusicstudio';
@@ -102,11 +104,13 @@ const Homepage = ({ selectedLanguage }) => {
         </div>
         <div className="offering-statement">
           <div className="mission-statement">
-          <h1 style={{ marginBottom: '2vw' }}>{text9}</h1>
+          <h1 style={{ marginBottom: '1vw' }}>{text9}</h1>
           </div>
         </div>
+        <div style={{ width: '80%' }}>
+          <IllinoisMap />
+        </div>
       </div>
-
     </div>
   );
 };

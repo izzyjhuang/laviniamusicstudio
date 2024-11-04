@@ -1,0 +1,15 @@
+.county-tooltip {
+    background: none;
+    border: none;
+    box-shadow: none;
+    font-weight: bold;
+    color: black;
+    font-size: 12px;
+    text-align: center;
+  }
+  
+  .county-label {
+    font-weight: bold;
+    color: black;
+  }
+  
